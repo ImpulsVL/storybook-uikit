@@ -1,0 +1,131 @@
+@import '../../ui-kit/typography.scss';
+
+.section__typography{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section__typographyHead{
+  display: grid;
+  grid-template-columns: 0.2fr 0.9fr 0.9fr;
+  gap: 120px;
+  white-space: nowrap;
+  position: relative;
+
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 1px;
+    background-color: rgba(8, 9, 28, 0.08);
+
+    width: 100%;
+
+  }
+}
+
+.section__typographyMain{
+  display: grid;
+  grid-template-columns: 0.2fr 0.9fr 0.9fr;
+  gap: 140px;
+}
+
+.div__rankItems{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.div__sizeItems{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-transform: uppercase;
+}
+
+.div__paragraphItems{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-transform: uppercase;
+}
+
+.h2__headItem{
+  font: $fontH2;
+}
+
+.div__ItemFonth1 {
+  font: $fontH1;
+}
+
+.div__ItemFonth2 {
+  font: $fontH2;
+}
+
+.div__ItemFonth3 {
+  font: $fontH3;
+}
+
+.div__ItemFonth4 {
+  font: $fontH4;
+}
+
+.div__ItemFonth5 {
+  font: $fontH5;
+}
+
+.div__ItemFonth6 {
+  font: $fontH6;
+}
+
+.div__ItemFonth7 {
+  font: $fontH7;
+}
+
+.div__ItemFonth8 {
+  font: $fontH8;
+}
+
+.div__ItemFontp1 {
+  font: $fontP1;
+}
+
+.div__ItemFontp2 {
+  font: $fontP2;
+}
+
+.div__ItemFontp3 {
+  font: $fontP3;
+}
+
+.div__ItemFontp4 {
+  font: $fontP4;
+}
+
+.div__ItemFontp5 {
+  font: $fontP5;
+}
+
+.div__ItemFontp6 {
+  font: $fontP6;
+}
+
+.div__ItemFontp7 {
+  font: $fontP7;
+}
+
+.div__ItemFontp8 {
+  font: $fontP8;
+}
+
+.div__ItemFontp9 {
+  font: $fontP9;
+}
+
+.div__ItemFontp10 {
+  font: $fontP10;
+}

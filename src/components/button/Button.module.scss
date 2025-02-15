@@ -1,0 +1,37 @@
+@import '../../ui-kit/colors';
+@import '../../ui-kit/radius';
+@import '../../ui-kit/typography';
+  
+.button {
+    color: $whiteMain;
+    border-radius: $border-radius4;
+    padding: 10px 20px;
+    font-family: $fontFamilyMain;
+    font-size: $fontP3;
+    border: none;
+    cursor: pointer;
+  
+    &.primary {
+      background-color: $prplMain;
+    }
+  
+    &.secondary {
+      background-color: $blackMain;
+    }
+  
+    &.danger {
+      background-color: $redMain;
+    }
+  
+    &.warning {
+      background-color: $orangeMain;
+    }
+  
+    &.success {
+      background-color: $greenMain;
+    }
+  
+    &:hover {
+      opacity: 0.8;
+    }
+  }

@@ -1,0 +1,42 @@
+@import '../../ui-kit/colors';
+@import '../../ui-kit/radius';
+@import '../../ui-kit/typography';
+
+.inputContainer {
+    margin-bottom: 16px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: $fontFamilyMain;
+    font-size: $fontP3;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $black300;
+    border-radius: $border-radius4;
+    font-family: $fontFamilyMain;
+    font-size: $fontP3;
+    color: $prpl700;
+    border-color: $prpl400;
+    cursor: pointer;
+
+    &:focus {
+        border-color: $prplMain;
+        outline: none;
+    }
+}
+
+.error {
+    border-color: $red400;
+    background-color: $red100;
+    color: $blackMain;
+
+    &:focus{
+        border-color: $redMain;
+        outline: none;
+    }
+}
