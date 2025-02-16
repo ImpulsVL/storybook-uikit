@@ -13,6 +13,10 @@ import '../../components/checkbox/CheckBox.module.scss';
 export default {
     title: 'Components/Checkbox',
     component: Checkbox,
+    parameters: {
+        layout: 'centered',
+    },
+    tags: ['autodocs'],
 };
 
 const Template = () => <Checkbox />;

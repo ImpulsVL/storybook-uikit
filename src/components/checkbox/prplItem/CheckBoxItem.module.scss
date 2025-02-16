@@ -8,6 +8,7 @@
     cursor: pointer;
     padding-left: 1.5em;
     margin: 10px;
+    font: $fontP3;
 }
 
 .input {
@@ -22,10 +23,10 @@
 }
 
 .check__box{
-    margin-left: -1.8em;
+    margin-left: -2.2em;
     position: absolute;
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     background-color: $whiteMain;
     background-image: url('../images/minus.svg');
     border-radius: $border-radius6;
