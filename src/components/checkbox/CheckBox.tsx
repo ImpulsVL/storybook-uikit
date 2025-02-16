@@ -1,29 +1,31 @@
 import React from 'react';
 import styles from './CheckBox.module.scss';
 
-interface CheckboxProps {
-    label: string;
-    checked: boolean;
-    iconType?: 'check' | 'plus' | 'minus';
-    onChange: (checked: boolean) => void; // Добавляем обработчик изменения
-}
+import CheckboxItem from './prplItem/CheckBoxItem';
+import CheckboxGreen from './greenItem/CheckBoxGreen';
+import CheckboxRed from './redItem/CheckBoxRed';
 
-const Checkbox: React.FC<CheckboxProps> = ({ label, checked, iconType, onChange }) => {
-    // Определяем классы для иконок
-    const iconClass = iconType ? `icon-${iconType}` : '';
-    const checkboxClass = `${styles.checkbox} ${checked ? styles.checked : ''} ${iconClass}`;
-
+const Checkbox: React.FC = () => {
     return (
-        <label className={styles.label}>
-            <input 
-                type="checkbox" 
-                checked={checked} 
-                className={styles.input} 
-                onChange={() => onChange(!checked)} // Обновляем состояние при изменении
-            />
-            <div className={checkboxClass} />
-            <span className={styles.labelText}>{label}</span>
-        </label>
+        <div className={styles.grid}>
+            <div className={`${styles.column} ${styles.style__one}`}>
+                <CheckboxItem label="Checkbox prpl 1" />
+                <CheckboxItem label="Checkbox prpl 2" />
+                <CheckboxItem label="Checkbox prpl 3" />
+            </div>
+
+            <div className={`${styles.column} ${styles.style__two}`}>
+                <CheckboxGreen label="Checkbox green 1" />
+                <CheckboxGreen label="Checkbox green 2" />
+                <CheckboxGreen label="Checkbox green 3" />
+            </div>
+
+            <div className={`${styles.column} ${styles.style__three}`}>
+                <CheckboxRed label="Checkbox red 1" />
+                <CheckboxRed label="Checkbox red 2" />
+                <CheckboxRed label="Checkbox red 3" />
+            </div>
+        </div>
     );
 };
 

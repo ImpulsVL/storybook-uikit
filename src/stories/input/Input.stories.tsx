@@ -4,7 +4,7 @@ import Input from '../../components/input/input';
 import styles from '../../components/input/Input.module.scss';
 
 const meta = {
-  title: 'Input',
+  title: 'Components/Input',
   component: Input,
   parameters: {
     layout: 'centered',

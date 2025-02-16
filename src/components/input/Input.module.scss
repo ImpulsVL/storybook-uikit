@@ -1,6 +1,6 @@
-@import '../../ui-kit/colors';
-@import '../../ui-kit/radius';
-@import '../../ui-kit/typography';
+@use '../../ui-kit/colors'  as *;
+@use '../../ui-kit/radius' as *;
+@use '../../ui-kit/typography' as *;
 
 .inputContainer {
     margin-bottom: 16px;
